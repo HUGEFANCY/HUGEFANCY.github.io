@@ -1,0 +1,19 @@
+/* style the three.js container however your want */
+#container {
+    position: relative;
+    height: 600px;
+    width: 600px
+}
+/* removes outline when clicking on three.js canvas */
+canvas:focus {
+    outline: none;
+}
+/* the style of the progress text */
+#progress {
+    position: absolute;
+top: 0;
+    margin: 6px;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+z-index: 2000;
+}

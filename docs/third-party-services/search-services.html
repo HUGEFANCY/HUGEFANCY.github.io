@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="5AUIVYTbHIAuz-eQtxSfZbWW5eg9_EVZMSQycIuXrG0">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"hugefancy.github.io","root":"/","images":"/images","scheme":"Mist","version":"8.2.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":12,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="NexT User Docs – Third-party Service Integration – Search Services">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Search Services">
+<meta property="og:url" content="https://hugefancy.github.io/HF-docs/docs/third-party-services/search-services.html">
+<meta property="og:site_name" content="HUGEFANCY docs">
+<meta property="og:description" content="NexT User Docs – Third-party Service Integration – Search Services">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://hugefancy.github.io/images/algolia-1.png">
+<meta property="og:image" content="https://hugefancy.github.io/images/algolia-2.png">
+<meta property="og:image" content="https://hugefancy.github.io/images/algolia-3.png">
+<meta property="og:image" content="https://hugefancy.github.io/images/algolia-4.png">
+<meta property="og:image" content="https://hugefancy.github.io/images/algolia-5.png">
+<meta property="article:published_time" content="2021-02-25T15:47:34.572Z">
+<meta property="article:modified_time" content="2021-02-25T15:47:34.572Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="3D printing, 3Dprinter, additive manufacturing, hugefancyprinter">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hugefancy.github.io/images/algolia-1.png">
+
+
+<link rel="canonical" href="https://hugefancy.github.io/HF-docs/docs/third-party-services/search-services">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+<title>Search Services | HUGEFANCY docs
+</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108155018-3"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-108155018-3');
+      }
+    </script>
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="HUGEFANCY docs" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">HUGEFANCY docs</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Large scale 3D Printing</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        
+            
+  <li class="menu-item menu-item-documentation"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Documentation</a></li>
+
+
+      
+        <li class="menu-item menu-item-references"><a href="/references/" rel="section"><i class="fa fa-flask fa-fw"></i>References</a></li>
+        <li class="menu-item menu-item-sponsors"><a href="/sponsors/" rel="section"><i class="fa fa-hands-helping fa-fw"></i>Sponsors</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Algolia-Search"><span class="nav-text">Algolia Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Local-Search"><span class="nav-text">Local Search</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Robin Godwyll"
+      src="/images/HF_Logo01.png">
+  <p class="site-author-name" itemprop="name">Robin Godwyll</p>
+  <div class="site-description" itemprop="description">Huge Fancy 3D Printer</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWU=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;next-theme"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXR0ZXIuaW0vaGV4by1uZXh0" title="Gitter → https:&#x2F;&#x2F;gitter.im&#x2F;hexo-next"><i class="fab fa-gitter fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+<div class="cc-license animated" itemprop="sponsor">
+  <span class="exturl cc-opacity" title="Deploy with Netlify → https://www.netlify.com" data-url="aHR0cHM6Ly93d3cubmV0bGlmeS5jb20="><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></span>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+  
+
+      
+
+        
+        <ul class="sub-menu menu">
+          
+            
+          
+          
+            
+                
+  <li class="menu-item menu-item-mechanical-design"><a href="/docs/mechanicaldesign/" rel="section"><i class="fa fa-cogs fa-fw"></i>Mechanical Design</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-printer-firmware"><a href="/docs/printfirmware/" rel="section"><i class="fab fa-uncharted fa-fw"></i>Printer Firmware</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-electronics"><a href="/docs/electronics/" rel="section"><i class="fa fa-car-battery fa-fw"></i>Electronics</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-print-algorithms"><a href="/docs/printalgorithms/" rel="section"><i class="fas fa-print fa-fw"></i>Print Algorithms</a></li>
+
+
+        </ul>
+        
+
+        
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+        
+      
+  
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Search Services
+</h1>
+
+<div class="post-meta-container">
+    <div class="post-description">NexT User Docs – Third-party Service Integration – Search Services</div>
+  <ul class="breadcrumb">
+            <li><a href="/docs/">DOCS</a></li>
+            <li><a href="/docs/third-party-services/">THIRD-PARTY-SERVICES</a></li>
+            <li>SEARCH-SERVICES</li>
+          
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <h3 id="Algolia-Search"><a href="#Algolia-Search" class="headerlink" title="Algolia Search"></a>Algolia Search</h3><p>NexT provides Algolia search plugin to search your Hexo website content. It should be noted that only turn on <code>enable</code> of <code>algolia_search</code> in <mark class="label primary">theme config file</mark> does not allow you to use the Algolia search correctly. You need to install the corresponding Hexo plugin to index your website on Algolia: <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL29uY2xldG9tL2hleG8tYWxnb2xpYQ==">Hexo Algolia<i class="fa fa-external-link-alt"></i></span> or <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xvdWlzQmFycmFucXVlaXJvL2hleG8tYWxnb2xpYXNlYXJjaA==">Hexo Algoliasearch<i class="fa fa-external-link-alt"></i></span>.</p>
+<div class="note danger"><p><strong>Known Issues</strong></p>
+<ol>
+<li>The latest version of the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL29uY2xldG9tL2hleG8tYWxnb2xpYQ==">Hexo Algolia<i class="fa fa-external-link-alt"></i></span> plugin removes the content indexing feature, given Algolia&#39;s free account limitation.</li>
+<li>The <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xvdWlzQmFycmFucXVlaXJvL2hleG8tYWxnb2xpYXNlYXJjaA==">Hexo Algoliasearch<i class="fa fa-external-link-alt"></i></span> plugin provides content indexing functionality. The same problem exists with <code>Record Too Big</code> for Algolia&#39;s free account.</li>
+</ol>
+</div>
+
+<p>Follow the steps described below to complete the installation of Algolia search.</p>
+<div class="tabs" id="algolia-search"><ul class="nav-tabs"><li class="tab active"><a href="#algolia-search-1">Registration →</a></li><li class="tab"><a href="#algolia-search-2">Algolia Config →</a></li><li class="tab"><a href="#algolia-search-3">Algolia Plugin →</a></li><li class="tab"><a href="#algolia-search-4">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="algolia-search-1"><p>Register at <span class="exturl" data-url="aHR0cHM6Ly93d3cuYWxnb2xpYS5jb20v">Algolia<i class="fa fa-external-link-alt"></i></span>, you can log in directly using GitHub or Google Account. Upon Customer&#39;s initial sign-up for an Account, Customer will have a free, fourteen (14) day evaluation period (the «Evaluation Period») for the Algolia Services commencing on the Effective Date, subject to the limitations on Algolia&#39;s website. After that, Algolia offers a free, branded version for up to 10k records and 100k operations per month.</p>
+<p>If a tutorial pops up, you can skip it. Go straight to create an <code>Index</code> which will be used later.<br><img src="/images/algolia-1.png" alt="Algolia Create Index" loading="lazy"></p></div><div class="tab-pane" id="algolia-search-2"><ol>
+<li><p>Go to the <code>API Keys</code> page and find your credentials. You will need the <code>Application ID</code> and the <code>Search-only API key</code> in the following sections. The <code>Admin API key</code> need to keep confidential. Never store your Admin API Key as <code>apiKey</code> in <mark class="label info">site config file</mark>: it would give full control of your Algolia index to others and you don&#39;t want to face the consequences.<br><img src="/images/algolia-2.png" alt="Algolia API Keys" loading="lazy"></p>
+</li>
+<li><p>In the <code>API Keys</code> page, click the <code>All API Keys</code> button to switch to the corresponding tab. Then click the <code>New API Key</code> button to activate a pop-up box where you can setup authorizations and restrictions with a great level of precision. Enter <code>addObject</code>, <code>deleteObject</code>, <code>listIndexes</code>, <code>deleteIndex</code> features in ACL permissions that will be allowed for the given API key. And then click the <code>Create</code> button. Copy this newly created key to the clipboard, we call it a <code>High-privilege API key</code>.<br><img src="/images/algolia-3.png" alt="Algolia API Keys 2" loading="lazy"><br><img src="/images/algolia-4.png" alt="Algolia Configuring Records" loading="lazy"></p>
+</li>
+</ol></div><div class="tab-pane" id="algolia-search-3"><p>Algolia requires users to upload their search index data either manually or via provided APIs. You need to choose one of the following two plugins to install. Both plugins will index your site and upload selected data to Algolia.</p>
+<div class="tabs" id="algolia-plugin"><ul class="nav-tabs"><li class="tab active"><a href="#algolia-plugin-1">Hexo Algolia</a></li><li class="tab"><a href="#algolia-plugin-2">Hexo Algoliasearch</a></li></ul><div class="tab-content"><div class="tab-pane active" id="algolia-plugin-1"><p>Install and configure <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL29uY2xldG9tL2hleG8tYWxnb2xpYQ==">Hexo Algolia<i class="fa fa-external-link-alt"></i></span> in your Hexo directory.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-algolia</span><br></pre></td></tr></table></figure>
+<p>In your <mark class="label info">site config file</mark>, add the following configuration and replace the <code>Application ID</code>, <code>Search-only API key</code> and <code>indexName</code> with corresponding fields obtained at Algolia.</p>
+<figure class="highlight yml"><figcaption><span>hexo/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">algolia:</span></span><br><span class="line">  <span class="attr">applicationID:</span> <span class="string">&quot;Application ID&quot;</span></span><br><span class="line">  <span class="attr">apiKey:</span> <span class="string">&quot;Search-only API key&quot;</span></span><br><span class="line">  <span class="attr">indexName:</span> <span class="string">&quot;indexName&quot;</span></span><br></pre></td></tr></table></figure>
+<p>Run the following command to upload index data, keep a weather eye out the output of the command.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key <span class="comment"># Use Git Bash</span></span><br><span class="line"><span class="comment"># set HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Windows command line</span></span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo algolia</span><br></pre></td></tr></table></figure>
+<p><img src="/images/algolia-5.png" alt="Reload Index" loading="lazy"></p></div><div class="tab-pane" id="algolia-plugin-2"><p>Install and configure <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xvdWlzQmFycmFucXVlaXJvL2hleG8tYWxnb2xpYXNlYXJjaA==">Hexo Algoliasearch<i class="fa fa-external-link-alt"></i></span> in your Hexo directory.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-algoliasearch</span><br></pre></td></tr></table></figure>
+<p>In your <mark class="label info">site config file</mark>, add the following configuration and replace the <code>Application ID</code>, <code>Search-only API key</code>, <code>High-privilege API key</code> and <code>indexName</code> with corresponding fields obtained at Algolia.</p>
+<figure class="highlight yml"><figcaption><span>hexo/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">algolia:</span></span><br><span class="line">  <span class="attr">appId:</span> <span class="string">&quot;Application ID&quot;</span></span><br><span class="line">  <span class="attr">apiKey:</span> <span class="string">&quot;Search-only API key&quot;</span></span><br><span class="line">  <span class="attr">adminApiKey:</span> <span class="string">&quot;High-privilege API key&quot;</span></span><br><span class="line">  <span class="attr">indexName:</span> <span class="string">&quot;indexName&quot;</span></span><br><span class="line">  <span class="attr">chunkSize:</span> <span class="number">5000</span></span><br><span class="line">  <span class="attr">fields:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">content:strip:truncate,0,500</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">excerpt:strip</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">gallery</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">permalink</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">photos</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">slug</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">tags</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">title</span></span><br></pre></td></tr></table></figure>
+<p>Run the following command to upload index data, keep a weather eye out the output of the command.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo algolia</span><br></pre></td></tr></table></figure></div></div></div></div><div class="tab-pane" id="algolia-search-4"><p>In <mark class="label primary">theme config file</mark>, turn on <code>enable</code> of <code>algolia_search</code>. At the same time, you need to <strong>turn off other search plugins</strong> like Local Search. You can also adjust the text in <code>labels</code> according to your needs.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Algolia Search</span></span><br><span class="line"><span class="attr">algolia_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hits:</span></span><br><span class="line">    <span class="attr">per_page:</span> <span class="number">10</span></span><br></pre></td></tr></table></figure></div></div></div>
+
+<h3 id="Local-Search"><a href="#Local-Search" class="headerlink" title="Local Search"></a>Local Search</h3><p>Local search does not require any external 3rd-party services and can be extra indexed by search engines. This search method is recommended for most users.</p>
+<div class="tabs" id="local-search"><ul class="nav-tabs"><li class="tab active"><a href="#local-search-1">Installation →</a></li><li class="tab"><a href="#local-search-2">Hexo Config →</a></li><li class="tab"><a href="#local-search-3">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="local-search-1"><p>Install <code>hexo-generator-searchdb</code> by executing the following command in <mark class="label info">site root dir</mark>:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="local-search-2"><p>Edit <mark class="label info">site config file</mark> and add following content:</p>
+<figure class="highlight yml"><figcaption><span>hexo/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="local-search-3"><p>Edit <mark class="label primary">theme config file</mark> to enable Local Search:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Local search</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/next-theme/hexo-generator-searchdb</span></span><br><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># If auto, trigger search by changing input.</span></span><br><span class="line">  <span class="comment"># If manual, trigger search by pressing enter key or search button.</span></span><br><span class="line">  <span class="attr">trigger:</span> <span class="string">auto</span></span><br><span class="line">  <span class="comment"># Show top n results per article, show all results by setting to -1</span></span><br><span class="line">  <span class="attr">top_n_per_article:</span> <span class="number">1</span></span><br><span class="line">  <span class="comment"># Unescape html strings to the readable one.</span></span><br><span class="line">  <span class="attr">unescape:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Preload the search data when the page loads.</span></span><br><span class="line">  <span class="attr">preload:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure></div></div></div>
+
+      </div>
+      
+      
+      
+    </div>
+  <ul class="breadcrumb">
+            <li><a href="/docs/">DOCS</a></li>
+            <li><a href="/docs/third-party-services/">THIRD-PARTY-SERVICES</a></li>
+            <li>SEARCH-SERVICES</li>
+          
+  </ul>
+
+    
+    
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">HUGEFANCY</span>
+</div>
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9taXN0Lw==">NexT.Mist</span>
+  </div><script defer src="/lib/three.js"></script><div class="footer-custom">
+Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG8tbmV4dC9oZXhvLW5leHQuZ2l0aHViLmlv">here</span>
+</div>
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/motion.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/schemes/muse.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/next-boot.min.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/local-search.min.js"></script>
+
+
+
+
+<script>
+if (document.querySelectorAll('.mermaid').length) {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.0/dist/mermaid.min.js', () => {
+    mermaid.init({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    }, '.mermaid');
+  }, window.mermaid);
+}
+</script>
+
+
+  
+
+
+
+
+  
+
+
+</body>
+</html>

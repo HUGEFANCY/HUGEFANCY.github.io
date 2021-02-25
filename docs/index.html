@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="5AUIVYTbHIAuz-eQtxSfZbWW5eg9_EVZMSQycIuXrG0">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"hugefancy.github.io","root":"/","images":"/images","scheme":"Mist","version":"8.2.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":12,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="NexT User Docs">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Documentation">
+<meta property="og:url" content="https://hugefancy.github.io/HF-docs/docs/index.html">
+<meta property="og:site_name" content="HUGEFANCY docs">
+<meta property="og:description" content="NexT User Docs">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://hugefancy.github.io/images/next-schemes.png">
+<meta property="og:image" content="https://hugefancy.github.io/images/next-schemes-dark.png">
+<meta property="og:image" content="https://hugefancy.github.io/images/en.png">
+<meta property="og:image" content="https://hugefancy.github.io/images/cn.png">
+<meta property="og:image" content="https://hugefancy.github.io/images/ru.png">
+<meta property="og:image" content="https://hugefancy.github.io/images/tomorrow.svg">
+<meta property="og:image" content="https://hugefancy.github.io/images/tomorrow-night.svg">
+<meta property="og:image" content="https://hugefancy.github.io/images/tomorrow-night-eighties.svg">
+<meta property="og:image" content="https://hugefancy.github.io/images/tomorrow-night-blue.svg">
+<meta property="og:image" content="https://hugefancy.github.io/images/tomorrow-night-bright.svg">
+<meta property="og:image" content="https://hugefancy.github.io/images/default.svg">
+<meta property="article:published_time" content="2018-02-10T00:00:00.000Z">
+<meta property="article:modified_time" content="2021-02-25T15:47:34.572Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="3D printing, 3Dprinter, additive manufacturing, hugefancyprinter">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hugefancy.github.io/images/next-schemes.png">
+
+
+<link rel="canonical" href="https://hugefancy.github.io/HF-docs/docs/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+<title>Documentation | HUGEFANCY docs
+</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108155018-3"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-108155018-3');
+      }
+    </script>
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="HUGEFANCY docs" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">HUGEFANCY docs</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Large scale 3D Printing</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        
+            
+  <li class="menu-item menu-item-documentation"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Documentation</a></li>
+
+
+      
+        <li class="menu-item menu-item-references"><a href="/references/" rel="section"><i class="fa fa-flask fa-fw"></i>References</a></li>
+        <li class="menu-item menu-item-sponsors"><a href="/sponsors/" rel="section"><i class="fa fa-hands-helping fa-fw"></i>Sponsors</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#more-testing"><span class="nav-text">more testing</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#it-should-show-up-above-this"><span class="nav-text">it should show up above this</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">-----</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Testing"><span class="nav-text">Testing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Elegant-and-Powerful-Theme-for-Hexo"><span class="nav-text">Elegant and Powerful Theme for Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Four-Schemes-in-One"><span class="nav-text">Four Schemes in One</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Multilingual-Support"><span class="nav-text">Multilingual Support</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Code-Highlighting-Themes"><span class="nav-text">Code Highlighting Themes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Supported-Browsers"><span class="nav-text">Supported Browsers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Customize-Your-NexT"><span class="nav-text">Customize Your NexT</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Robin Godwyll"
+      src="/images/HF_Logo01.png">
+  <p class="site-author-name" itemprop="name">Robin Godwyll</p>
+  <div class="site-description" itemprop="description">Huge Fancy 3D Printer</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWU=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;next-theme"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXR0ZXIuaW0vaGV4by1uZXh0" title="Gitter → https:&#x2F;&#x2F;gitter.im&#x2F;hexo-next"><i class="fab fa-gitter fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+<div class="cc-license animated" itemprop="sponsor">
+  <span class="exturl cc-opacity" title="Deploy with Netlify → https://www.netlify.com" data-url="aHR0cHM6Ly93d3cubmV0bGlmeS5jb20="><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></span>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+  
+
+      
+
+        
+        <ul class="sub-menu menu">
+          
+            
+          
+          
+            
+                
+  <li class="menu-item menu-item-mechanical-design"><a href="/docs/mechanicaldesign/" rel="section"><i class="fa fa-cogs fa-fw"></i>Mechanical Design</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-printer-firmware"><a href="/docs/printfirmware/" rel="section"><i class="fab fa-uncharted fa-fw"></i>Printer Firmware</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-electronics"><a href="/docs/electronics/" rel="section"><i class="fa fa-car-battery fa-fw"></i>Electronics</a></li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-print-algorithms"><a href="/docs/printalgorithms/" rel="section"><i class="fas fa-print fa-fw"></i>Print Algorithms</a></li>
+
+
+        </ul>
+        
+
+        
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+        
+      
+  
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Documentation
+</h1>
+
+<div class="post-meta-container">
+    <div class="post-description">NexT User Docs</div>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <h1 id="more-testing"><a href="#more-testing" class="headerlink" title="more testing"></a>more testing</h1><script>
+    var modelpath = "../assets/chair.json";
+</script>
+<!-- this is the container where the three.js scene will go -->
+<link rel="stylesheet" href="/css/container.css">
+<div id="container"></div>
+
+<!-- these are the required scripts for the three.js scene -->
+<script src="../lib/three.min.js"></script>
+<script src="../lib/OrbitControls.js"></script>
+<script src="../lib/RectAreaLightUniformsLib.js"></script>
+<!-- this is your app's lib file -->
+<script src="../lib/triceratops_app.js"></script>
+
+<h1 id="it-should-show-up-above-this"><a href="#it-should-show-up-above-this" class="headerlink" title="it should show up above this"></a>it should show up above this</h1><!-- <div id="three"></div>
+<script id="threeMain" type="module">
+  if (self.frameElement && self.frameElement.tagName == "IFRAME") {
+  import('https://threelib.moshuying.top/assets/glsl_snippets.js').then(async res=>res.glsl_snippets(false,false,{pause:true}))
+} else {
+  import("https://threelib.moshuying.top/assets/createTHREE.js").then((result) => 
+      result.initHexoThreeModule(document.getElementById("three"),document.getElementById("threeMain")));
+}
+</script> -->
+
+<h1 id=""><a href="#" class="headerlink" title="-----"></a>-----</h1><!-- <div id="three3D"></div>
+<script type="module" id="threeMain3D">
+if (!(self.frameElement && self.frameElement.tagName == "IFRAME")) {
+  import("https://threelib.moshuying.top/assets/createTHREE.js").then((result) => result.initHexoThreeModule(document.getElementById("three3D"),document.getElementById("threeMain3D")));
+} else {
+  // 这里的代码会被直接执行，window指向iframe内的window（其实就是把代码整个移动到了iframe内）kjj
+  console.log(1)
+  main()
+  async function main(){
+    const THREE = await import("https://cdn.bootcdn.net/ajax/libs/three.js/r120/three.module.js");
+    const {OrbitControls} = await import('https://threelib.moshuying.top/three.js/examples/jsm/controls/OrbitControls.js')
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+    camera.position.set(50,90,120);
+    const renderer = new THREE.WebGLRenderer({alpha:true});
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.domElement.style.width =renderer.domElement.style.height = '100%'
+    document.body.appendChild( renderer.domElement );
+    let num2 = null
+    let size = 200
+    for(let i = 0;i<size;i++){
+      num2 = Math.random() * 14 // 随机高度范围
+      let box = new THREE.Mesh(new THREE.BoxBufferGeometry(3,num2,3),new THREE.ShaderMaterial({
+        vertexShader: `varying float vDepth;void main() {gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );vDepth = (gl_Position.z/gl_Position.w)*.5+.5;}`,
+        fragmentShader: `varying float vDepth;void main() {gl_FragColor = vec4(vDepth,vDepth,vDepth,1);}`
+      }))
+      let box2 = new THREE.Mesh(
+        new THREE.BoxBufferGeometry(3,num2,3),
+        new THREE.MeshBasicMaterial({color:0xcccccc})
+      )
+      const [x,y,z] = [-100 + Math.round(Math.random()*200),num2/2,-100 + Math.round(Math.random()*200)] // 控制方块之间的距离
+      box.position.set(x,y,z)
+      box2.position.set(x,y,z)
+      box.castShadow = true
+      scene.add(box2)
+    }
+    new OrbitControls(camera,renderer.domElement)
+    window.onresize = function (){
+      camera.aspect = window.innerWidth /window.innerHeight
+      camera.updateProjectionMatrix()
+      renderer.setSize(window.innerWidth,window.innerHeight)
+    }
+    const animate = function () {
+      renderer.render( scene, camera );
+      requestAnimationFrame( animate );
+    };
+    animate();
+  }
+}
+</script> -->
+
+<h1 id="Testing"><a href="#Testing" class="headerlink" title="Testing"></a>Testing</h1><h3 id="Elegant-and-Powerful-Theme-for-Hexo"><a href="#Elegant-and-Powerful-Theme-for-Hexo" class="headerlink" title="Elegant and Powerful Theme for Hexo"></a>Elegant and Powerful Theme for Hexo</h3><p>Theme NexT has the following features:</p>
+<ul>
+<li>No jQuery.</li>
+<li>Support <span class="exturl" data-url="aHR0cHM6Ly9jYW5pdXNlLmNvbS8jZmVhdD1wcmVmZXJzLWNvbG9yLXNjaGVtZQ==">native dark mode<i class="fa fa-external-link-alt"></i></span>.</li>
+<li>Support Pjax to deliver a fast browsing experience.</li>
+<li>Integrated KaTeX and MathJax mathematical formula rendering.</li>
+<li>Integrated PDF.js and mermaid diagram.</li>
+<li>Support Disqus, Changyan, LiveRe, Gitalk, Utterances and Isso comment systems.</li>
+<li>Support a large number of third-party statistics and content sharing services.</li>
+<li>Easy to customize content or modify style.</li>
+</ul>
+<h3 id="Four-Schemes-in-One"><a href="#Four-Schemes-in-One" class="headerlink" title="Four Schemes in One"></a>Four Schemes in One</h3><p>By using different Schemes in NexT, you can simply change the style of your blog, and nearly all options can be used in all schemes.</p>
+<style>
+.image-comparison-container {
+    position: relative;
+}
+
+.image-comparison {
+    opacity: 1 !important;
+}
+
+@keyframes next-clip-path {
+    from {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.image-comparison:last-of-type {
+    animation: next-clip-path 8s alternate ease-in-out infinite;
+    position: absolute;
+    top: 0;
+}
+</style>
+<div class="image-comparison-container">
+    <img class="image-comparison" src="/images/next-schemes.png" alt="NexT Schemes">
+    <img class="image-comparison" src="/images/next-schemes-dark.png" alt="NexT Schemes">
+</div>
+
+<h3 id="Multilingual-Support"><a href="#Multilingual-Support" class="headerlink" title="Multilingual Support"></a>Multilingual Support</h3><p>Thanks to the contribution of our users and developers, <a href="/docs/theme-settings/internationalization.html#Choosing-Language">NexT now supports over 20 languages</a>.</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/en.png" alt="English translation" loading="lazy"></div><div class="group-picture-column"><img src="/images/cn.png" alt="Chinese translation" loading="lazy"></div><div class="group-picture-column"><img src="/images/ru.png" alt="Russian translation" loading="lazy"></div></div></div>
+
+<h3 id="Code-Highlighting-Themes"><a href="#Code-Highlighting-Themes" class="headerlink" title="Code Highlighting Themes"></a>Code Highlighting Themes</h3><p>NexT uses code highlighting themes from the <span class="exturl" data-url="aHR0cHM6Ly9oaWdobGlnaHRqcy5vcmcv">Highlight.js<i class="fa fa-external-link-alt"></i></span> and <span class="exturl" data-url="aHR0cHM6Ly9wcmlzbWpzLmNvbS8=">Prism<i class="fa fa-external-link-alt"></i></span> package, and makes <a href="/docs/theme-settings/#Codeblock-Style">more than 120 themes</a> available to you.</p>
+<!-- Inspired by https://github.com/sindresorhus/css-in-readme-like-wat -->
+<table>
+<thead>
+<tr>
+<th align="center">Tomorrow</th>
+<th align="center">Tomorrow Night</th>
+<th align="center">Tomorrow Night Eighties</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/images/tomorrow.svg" loading="lazy"></td>
+<td align="center"><img src="/images/tomorrow-night.svg" loading="lazy"></td>
+<td align="center"><img src="/images/tomorrow-night-eighties.svg" loading="lazy"></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">Tomorrow Night Blue</th>
+<th align="center">Tomorrow Night Bright</th>
+<th align="center">Default</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/images/tomorrow-night-blue.svg" loading="lazy"></td>
+<td align="center"><img src="/images/tomorrow-night-bright.svg" loading="lazy"></td>
+<td align="center"><img src="/images/default.svg" loading="lazy"></td>
+</tr>
+</tbody></table>
+<h3 id="Supported-Browsers"><a href="#Supported-Browsers" class="headerlink" title="Supported Browsers"></a>Supported Browsers</h3><p>We design NexT to support the latest web browsers. We support the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features are used in theme NexT, including CSS Variables, Destructuring assignment, Arrow functions and Spread operator.</p>
+<table>
+<thead>
+<tr>
+<th>Browser</th>
+<th>Supported versions</th>
+<th>Release date</th>
+<th>Limitation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><i class="fab fa-internet-explorer fa-2x"></i> IE</td>
+<td>N/A</td>
+<td>Oct 17, 2013</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><i class="fab fa-edge-legacy fa-2x"></i> Edge</td>
+<td>16+</td>
+<td>Oct 17, 2017</td>
+<td><span class="exturl" data-url="aHR0cHM6Ly9jYW5pdXNlLmNvbS8jZmVhdD1jc3MtdmFyaWFibGVz">CSS Variables<i class="fa fa-external-link-alt"></i></span></td>
+</tr>
+<tr>
+<td><i class="fab fa-firefox-browser fa-2x"></i> Firefox</td>
+<td>41+</td>
+<td>Sep 22, 2015</td>
+<td><span class="exturl" data-url="aHR0cHM6Ly9jYW5pdXNlLmNvbS8jZmVhdD1tZG4tamF2YXNjcmlwdF9vcGVyYXRvcnNfZGVzdHJ1Y3R1cmluZw==">Destructuring assignment<i class="fa fa-external-link-alt"></i></span></td>
+</tr>
+<tr>
+<td><i class="fab fa-chrome fa-2x"></i> Chrome</td>
+<td>49+</td>
+<td>Mar 3, 2016</td>
+<td>CSS Variables</td>
+</tr>
+<tr>
+<td><i class="fab fa-safari fa-2x"></i> Safari</td>
+<td>10+</td>
+<td>Sep 20, 2016</td>
+<td><span class="exturl" data-url="aHR0cHM6Ly9jYW5pdXNlLmNvbS8jZmVhdD1hcnJvdy1mdW5jdGlvbnM=">Arrow functions<i class="fa fa-external-link-alt"></i></span></td>
+</tr>
+<tr>
+<td><i class="fab fa-opera fa-2x"></i> Opera</td>
+<td>37+</td>
+<td>May 4, 2016</td>
+<td><span class="exturl" data-url="aHR0cHM6Ly9jYW5pdXNlLmNvbS8jZmVhdD1tZG4tamF2YXNjcmlwdF9vcGVyYXRvcnNfc3ByZWFkX3NwcmVhZF9pbl9hcnJheXM=">Spread operator<i class="fa fa-external-link-alt"></i></span></td>
+</tr>
+</tbody></table>
+<p>Some other new Web APIs, such as <span class="exturl" data-url="aHR0cHM6Ly9jYW5pdXNlLmNvbS8jZmVhdD1pbnRlcnNlY3Rpb25vYnNlcnZlcg==">IntersectionObserver<i class="fa fa-external-link-alt"></i></span> and <span class="exturl" data-url="aHR0cHM6Ly9jYW5pdXNlLmNvbS8jZmVhdD1mZXRjaA==">Fetch API<i class="fa fa-external-link-alt"></i></span>, are used by NexT plugins. They are not core functions of NexT, so we have no plans to fix their compatibility issues with legacy browsers.</p>
+<p>In addition, <span class="exturl" data-url="aHR0cHM6Ly9jYW5pdXNlLmNvbS8jZmVhdD1jc3Mtc3RpY2t5">CSS position: sticky<i class="fa fa-external-link-alt"></i></span> is used for sidebar positioning. On browsers that do not support this property, its fallback style <code>position: static</code> will be used.</p>
+<h3 id="Customize-Your-NexT"><a href="#Customize-Your-NexT" class="headerlink" title="Customize Your NexT"></a>Customize Your NexT</h3><p>NexT have flexible but simple options, and you can make your own blog with built-in third-party support. Now let&#39;s <a href="/docs/getting-started/">get started</a>.</p>
+
+      </div>
+      
+      
+      
+    </div>
+
+    
+    
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">HUGEFANCY</span>
+</div>
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9taXN0Lw==">NexT.Mist</span>
+  </div><script defer src="/lib/three.js"></script><div class="footer-custom">
+Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG8tbmV4dC9oZXhvLW5leHQuZ2l0aHViLmlv">here</span>
+</div>
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/motion.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/schemes/muse.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/next-boot.min.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/local-search.min.js"></script>
+
+
+
+
+<script>
+if (document.querySelectorAll('.mermaid').length) {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.0/dist/mermaid.min.js', () => {
+    mermaid.init({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    }, '.mermaid');
+  }, window.mermaid);
+}
+</script>
+
+
+  
+
+
+
+
+  
+
+
+</body>
+</html>
