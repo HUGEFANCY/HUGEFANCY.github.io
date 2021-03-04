@@ -1,389 +1,376 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/imagegrid.css">
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <link rel="stylesheet" href="css/Videobox.css">
 
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <meta name="google-site-verification" content="5AUIVYTbHIAuz-eQtxSfZbWW5eg9_EVZMSQycIuXrG0">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
-
-<script class="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"hugefancy.github.io","root":"/","images":"/images","scheme":"Mist","version":"8.2.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":12,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
-  </script>
-<meta name="description" content="HUGEFANCY is a Project exploring large scale additive manufacturing. It was built as a graduation project at the faculty of Industrial Design BURG-Halle  by Chris Walter  and Robin Godwyll.   This Pa">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Welcome to the HUGEFANCY Documentation!">
-<meta property="og:url" content="https://hugefancy.github.io/index.html">
-<meta property="og:site_name" content="HUGEFANCY docs">
-<meta property="og:description" content="HUGEFANCY is a Project exploring large scale additive manufacturing. It was built as a graduation project at the faculty of Industrial Design BURG-Halle  by Chris Walter  and Robin Godwyll.   This Pa">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-03-02T10:57:21.764Z">
-<meta property="article:modified_time" content="2021-03-02T10:57:21.764Z">
-<meta property="article:author" content="John Doe">
-<meta property="article:tag" content="3D printing, 3Dprinter, additive manufacturing, hugefancyprinter">
-<meta name="twitter:card" content="summary">
-
-
-<link rel="canonical" href="https://hugefancy.github.io/">
-
-
-<script class="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : false,
-    lang   : 'en'
-  };
-</script>
-<title>Welcome to the HUGEFANCY Documentation! | HUGEFANCY docs
-</title>
-  
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108155018-3"></script>
-    <script>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-108155018-3');
-      }
-    </script>
-
-
-
-
-  <noscript>
-  <style>
-  body { margin-top: 2rem; }
-
-  .use-motion .menu-item,
-  .use-motion .sidebar,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header {
-    visibility: visible;
-  }
-
-  .use-motion .header,
-  .use-motion .site-brand-container .toggle,
-  .use-motion .footer { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle,
-  .use-motion .custom-logo-image {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line {
-    transform: scaleX(1);
-  }
-
-  .search-pop-overlay, .sidebar-nav { display: none; }
-  .sidebar-panel { display: block; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="HUGEFANCY docs" type="application/atom+xml">
+    <!-- <link rel="stylesheet" href="css/betterslideshow_styles.css"> -->
+    <!-- <link rel="stylesheet" href="css/lazyload.css"> -->
+    <script src="scripts/navigation.js"></script>    
+    <script src="scripts/imageslideshow.js"></script>    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="scripts/responsiveslides.min.js"></script>
+    <script src="scripts/videobox.js"></script>
+    
+    <script src="scripts/vorschaubild.js"></script>
+    <script src="scripts/ls.unveilhooks.min.js"></script>
+    <script src="scripts/ls.video-embed.min.js"></script>
+    
+    <!-- <script src="scripts/betterslideshow.js"></script>     -->
+    <!-- <script src="scripts/lazysizes.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script> -->
+    
 </head>
-
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
-  <div class="headband"></div>
-
-  <main class="main">
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <i class="logo-line"></i>
-      <h1 class="site-title">HUGEFANCY docs</h1>
-      <i class="logo-line"></i>
-    </a>
-      <p class="site-subtitle" itemprop="description">Large scale 3D Printing</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
-  </div>
-</div>
-
-
-
-<nav class="site-nav">
-  <ul class="main-menu menu">
-        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+<body>
+    <!-- Navigation  -->
+    
+    <nav class="section-nav">
+        <!-- <ol class="navlist">
+            <li><a href="#Intro">Intro</a></li>
+            <li><a href="#Bau">Bau des Druckers</a></li>
+            <li><a href="#Tests">Erste Tests</a></li>
+            <li><a href="#Kontext">Kontext</a></li>
+            <li><a href="#Experimente">Experimente</a>
+                <ul>
+                    <li class=""><a href="#Experimente--chairs">Algorithmic Chairs</a></li>
+                    <li class=""><a href="#Experimente--lamps">Nicht die hellste Leuchte</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#Ausblick">Ausblick</a></li>
+            <li class=""><a href="#Danksagung">Danksagung</a></li>
+            <li class=""><a href="#Refernzen">Referenzen</a></li>
+        </ol> -->
+    </nav>
+    <main>
         
+        <section id="Intro">
             
-  <li class="menu-item menu-item-documentation"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Documentation</a></li>
+            <div style="padding-top: 15%;">
+                <h1>The HugeFancy 3D Printer</h1>
+            </div>
+            
+            <div class="textblock">
+                <p>
+                    Das HugeFancy-Printer Projekt ist eine experimentelle Auseinandersetzung mit Großformatigem 3D-Druck. 
+                </p>
+                <p>
+                    Während 3D-Druck im kleinen Format bereits einzug in viele Industrien und Gestaltungsprozesse gefunden hat wollten wir mit dieser Projekt die Technologie auf einer neuen Skala erforschen: die menschliche Skala!
+                </p>
+            </div> 
+            <!-- <div>
+                <img class="titleimage" src="images/HF-Printer_Construction_1.jpg" >
+            </div> -->
+            
+            <div class="box-video box_albert">
+                <div class="bg-video lazyload langsam" data-bg="/images/albert/albert_video-1.jpg"
+                alt="Video zum paste extruder Albert">
+                    <img src="images/HF-Printer_Full_3.jpg" alt="maschine-6"  >
+                <div class="bt-play">Play</div>
+            </div>
+            <div class="video-container einblendencss">
 
-
-      
-        <li class="menu-item menu-item-references"><a href="/references/" rel="section"><i class="fa fa-flask fa-fw"></i>References</a></li>
-        <li class="menu-item menu-item-sponsors"><a href="/sponsors/" rel="section"><i class="fa fa-hands-helping fa-fw"></i>Sponsors</a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
-      </li>
-  </ul>
-</nav>
-
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup"><div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close" role="button">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div class="search-result-container no-result">
-  <div class="search-result-icon">
-    <i class="fa fa-spinner fa-pulse fa-5x"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
+                    <img src="images/HF-Printer_Full_3.jpg" alt="maschine-6"  >
+                <div id="video_albert"></div>
+            </div>
+        </div>
+        <div class="textblock">
+            <p>
+                Digitale Fertigung, zu der auch der 3D-Druck gehört ermöglicht völlig neue Wege in der Gestaltung. Jedes gedruckte Objekt kann einzigartig sein ohne dass sich der Aufwand oder die Kosten erhöhen. 
+            </p>
+            <p>
+                Wie können wir als Gestalter diese Möglichkeit Nutzen und Objekte schaffen, die unsere bisherige Beziehung zu Alltagsobjekten neu denken oder in Frage Stellen? 
+            </p>
+        </div>
         
-  
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-
-  <aside class="sidebar">
-
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <div class="sidebar-panel-container">
-        <!--noindex-->
-        <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Documentation"><span class="nav-text">Documentation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-text">-</span></a></li></ol></li></ol></div>
+    </section>
+    <section id="Bau">
+        
+        <div>
+            <h2>
+                Bau des HugeFancy 3D-Printer
+            </h2>
+        </div>    
+        <div class="textblock">
+            Im Umgang mit neuen Technologien oder, wie in unserem Fall, neuen Aspekten einer etablierten Technologie ist es wichtig als Gestaltende direkten Zugang zu diesen Technologien zu haben. Deshalb war für uns klar, dass wir selbst einen Großformatigen 3D-Drucker bauen, um die Möglichkeiten und Einschränkungen die eine solche Machine mit sich bringt von Beginn an mitgestalten zu können.
         </div>
-        <!--/noindex-->
-
-        <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Robin Godwyll"
-      src="/images/HF_Logo01.png">
-  <p class="site-author-name" itemprop="name">Robin Godwyll</p>
-  <div class="site-description" itemprop="description">Huge Fancy 3D Printer</div>
-</div>
-<div class="site-state-wrap site-overview-item animated">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">3</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author site-overview-item animated">
-      <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWU=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;next-theme"><i class="fab fa-github fa-fw"></i></span>
-      </span>
-      <span class="links-of-author-item">
-        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
-      </span>
-      <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cHM6Ly9naXR0ZXIuaW0vaGV4by1uZXh0" title="Gitter → https:&#x2F;&#x2F;gitter.im&#x2F;hexo-next"><i class="fab fa-gitter fa-fw"></i></span>
-      </span>
-  </div>
-  <div class="cc-license site-overview-item animated" itemprop="license">
-    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
-  </div>
-
-
-<div class="cc-license animated" itemprop="sponsor">
-  <span class="exturl cc-opacity" title="Deploy with Netlify → https://www.netlify.com" data-url="aHR0cHM6Ly93d3cubmV0bGlmeS5jb20="><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></span>
-</div>
-
+        
+        <div class="imagegrid">
+            <div class="row">
+                <div class="fullrow_column">
+                    <img src="images/HF-Printer_Full_3.jpg" alt="maschine-6"  >
+                </div>
+            </div>
         </div>
-      </div>
+        
+        
+        <div class="textblock">
+            Über den Zeitraum eines halben Jahres entstand so der HugeFancy-Printer ein 2,5m x 2m x 1,8m großer karthesischer 3D-Drucker nach dem Core-XY-Prinzip. 
+            
+        </div>
+        <div class="imagegrid">
+            <div class="row">
+                <div class="column">
+                    <img src="images/HF-Printer_Full_6.jpg" alt="maschine-6"  >
+                </div>
+                <div class="column">
+                    <img src="images/HF-Printer_Full_5.jpg" alt="maschine-3"  >
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="textblock">
+            Der Bau des Druckers war ein wesentlicher Bestandteil des Projektes. Die Maschine existiert an der Schnittstelle zwischen frei zugänglicher Open-Source Hardware und Industriellen Komponenten. Während des Baus haben wir immer wieder auf das Wissen anderer zurück gegriffen, das in Foren und online dokumentierten Projekten zu finden ist. 
+        </div>
+        <div class="imagegrid">
+            <div class="row">
+                <div class="column">
+                    <ul class="rslides">
+                        <li><img src="images/HF-Printer_Construction_1.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_2.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_3.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_4.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_5.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_6.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="rslides">
+                        <li><img  src="images/HF-Printer_Construction_7.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_8.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_9.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_10.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_11.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_12.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <video 
+                    loop
+                    autoplay=true
+                    muted=true
+                    >
+                    <source src="images/AlurahmenMontage_small.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="column">
+                    <video 
+                    loop
+                    autoplay=true
+                    muted=true
+                    >
+                    <source src="images/Alurahmenmontage_small.webm" type="video/webm">
+                        
+                    </video>
+                </div> 
+                
+            </div>
+        </div>
+        <div class="textblock">
+            Als Gestalter an der Grenze von Technik, Design und Kunst profitieren wir enorm von dieser Art der dezentralen Wissens-Weitergabe, und sehen uns auch selbst in der Pflicht unsere Erkenntnisse, Tools und Ergebnisse weiter zu geben und für andere zugänglich zu machen. 
+            Den Bauprozess sowie 3D-Modelle, Herstellungsdaten und eigens programmierte Software stellen wir über verschiedene Plattformen öffentlich und erweitern so das kollektive Wissen der Maker-Community. 
+        </div>
+        
     </div>
-  </aside>
-  <div class="sidebar-dimmer"></div>
-
-
-    </header>
-
-    
-  <div class="back-to-top" role="button">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-
-
-    <div class="main-inner page posts-expand">
-  
-
-      
-      
-  
-
-
-    
-    
-    
-    <div class="post-block" lang="en"><header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">Welcome to the HUGEFANCY Documentation!
-</h1>
-
-<div class="post-meta-container">
 </div>
-
-</header>
-
-      
-      
-      <div class="post-body">
-          <blockquote>
-<p>HUGEFANCY is a Project exploring large scale additive manufacturing. It was built as a graduation project at the faculty of Industrial Design <span class="exturl" data-url="aHR0cHM6Ly93d3cuYnVyZy1oYWxsZS5kZS8=">BURG-Halle<i class="fa fa-external-link-alt"></i></span>  by <span class="exturl" data-url="aHR0cHM6Ly93d3cuY2hyaXN3YWx0ZXIub3JnLw==">Chris Walter<i class="fa fa-external-link-alt"></i></span>  and <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3JvYmluLWdkd2w=">Robin Godwyll<i class="fa fa-external-link-alt"></i></span>. </p>
-</blockquote>
-<p>This Page includes all the technical documentation for the actual printer, its firmware and electronics as well as custom Print algorithms we created during the Project. </p>
-<h1 id="Documentation"><a href="#Documentation" class="headerlink" title="Documentation"></a>Documentation</h1><h2 id=""><a href="#" class="headerlink" title="-"></a>-</h2>
-      </div>
-      
-      
-      
-    </div>
-
-    
-    
-
-
-
 <script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      const commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
+    $(function() {
+        $(".rslides").responsiveSlides();
     });
-  }
 </script>
-</div>
-  </main>
 
-  <footer class="footer">
-    <div class="footer-inner">
-
-
-<div class="copyright">
-  &copy; 2018 – 
-  <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">HUGEFANCY</span>
-</div>
-  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9taXN0Lw==">NexT.Mist</span>
-  </div><script defer src="/lib/three.js"></script><div class="footer-custom">
-Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG8tbmV4dC9oZXhvLW5leHQuZ2l0aHViLmlv">here</span>
-</div>
+<!-- <div>
+    <video 
+    loop
+    autoplay=true
+    muted=true
+    poster="images/AluFrame_PosterIMG.jpg"
+    width="100%">
+    <source src="images/AlurahmenMontage_small.webm"
+    type="video/webm">
+    
+</video>
+</div> -->
 
 
+</section>
+
+<section id="Tests">
+    
+    <!-- <div>
+        <h2>
+            Erste Tests
+        </h2>
+    </div> -->
+</section>
+
+<section id="Kontext">
+    <div>
+        <h2>Kontext Verortung Verantwortung</h2>
     </div>
-  </footer>
+    
+    <div class="textblock">
+        <p>
+            Das FDM-Druckverfahren nutzt Kunststoffe und bringt sie durch Aufschmelzen und präzises Aufeinanderschichten in dreidimensionale Formen. Thermoplastische Kunststoffe sind für dieses Verfahren geeignet wie kein anderes Material und lassen durch ihre Eigenschaften einen großen Gestaltungsspielraum und vielfältige nutzungsmöglichkeiten der Objekte zu. Jedoch sind Kunststoffe auf Erölbasis in vieler Hinsicht problematisch. Eine zentrale Frage unseres Projektes war deshalb wie wir mit diesem Material verantwortungsvoll umgehen können.
+        </p>
+    </div>
+    <div class="imagegrid" loading="lazy">
+        <div class="row">
+            <div class="column">
+                <ul class="rslides">
+                    <li><img src="images/testzylinder-4.jpg" alt=""></li>
+                    <li><img loading="lazy" src="images/testzylinder-5.jpg" alt=""></li>
+                </ul>
+                <!-- <p class="imagecaption">Erste Testdrucke</p> -->
+            </div>
+            <div class="column">
+                <ul class="rslides">
+                    <li><img  src="images/testzylinder-23.jpg" alt=""></li>
+                    <li><img loading="lazy" src="images/testzylinder-7.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p class="imagecaption">
+                Erste Testdrucke
+            </p>
+        </div>
+        
+    </div>
+    
+    <div class="textblock">
+        <p>
+            Eine wichtige Inspirationsquelle war dabei das Precious-Plastics Projekt, das von Dave Hakkens ins Leben gerufen wurde. Zwei Aspekte sind uns besonders wichtig: Auf der Materialebene möchten wir vor allem Recyclete Granulate nutzen und auch unsere Fehldrucke und Experimente in dem Materialkreislauf zurück führen. 
+        </p>
+        <p> 
+            Genau so wichtig wie der Umgang mit dem Material ist aber auch unsere Gestaltung der Druckobjekte. Plastik ist ein wertvolles Material und die Objekte die wir damit formen müssen der Lebenszeit und der in der Herstellung des Materials aufgewendeten Ernergie gerecht werden. 
+        </p>
+    </div>
+    <div class="textblock">
+        <p>
+            <b>Hier setzen unsere ersten Experimente an: </b>
+        </p>
+        <p>
+            Wie kann die Einzigartigkeit und Personalisierbarkeit der Druckobjekte unseren Umgang mit ihnen und unsere Wertschätzung verbessern? Können wir die flexibilität des 3D-Drucks nutzen um Gegenstände zu erschaffen die mehr sind als Gebrauchsgut und die durch verschiedene digitale Gestaltungsmethoden mehr sind als die in Massen gefertigten Objekte die uns umgeben? 
+        </p>
+    </div>
+</section>
 
-  
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/motion.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/schemes/muse.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/next-boot.min.js"></script>
 
-  
-<script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.2.1/source/js/local-search.min.js"></script>
+<section id="Experimente">
+    <div>
+        <h2>
+            Experimente
+        </h2>
+    </div>
+    <div class="textblock">
+        Im Laufe des Projekts enstanden 2 experimentelle Arbeiten, die genau diese Aspekte aufgreifen: 
+    </div>
+    
+    <section id="Experimente--chairs">
+        
+        <div>
+            <h3>
+                1. Algorithmic Chairs
+            </h3>
+        </div>
+        <div class="textblock">
+            Die Algorithmic chairs erforschen vor allem dem Aspekt der Einzigartigkeit. Wir können durch das Druckverfahren jedes Objekt neu gestalten. Um diese Möglichkeit nutzen zu können sind herkömmliche Gestaltungsmethoden nicht ausreichend. Anstatt einen einzigen Entwurf zu erstellen nutzen wir die Möglichkeiten Algorithmischer Gestaltung um stattdessen einen sogg. Design-Space zu definieren. 
+        </div>
+        <div class="imagegrid">
+            <div class="row">
+                <div class="column">
+                    <video 
+                    loop
+                    autoplay=true
+                    muted=true
+                    >
+                    <source src="images/Experimente/AlgorithmicChair_Animation2_newsetting.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="column">
+                    <video 
+                    loop
+                    autoplay=true
+                    muted=true
+                    >
+                    <source src="images/Experimente/AlgorithmicChair_Animation4_newsetting.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="textblock">
+            Dieser Design-Space umfasst die Menge aller möglichen Objekte innerhalb des von uns gesetzten Rahmens. Den Design-Space können wir anschließend auf verschiedene Weise explorieren und erhalten eine Vielzahl unterschiedlicher Objekte die jedoch alle den Anforderungen gerecht werden. Der Designprozess wird dadurch zu einer konstanten Auseinandersetzung mit Algorithmen und Parametrischen Gestaltungstools.
+        </div>
+        <div class="imagegrid">
+            <div class="row">
+                <div class="column">
+                    <ul class="rslides">
+                        <li><img src="images/HF-Printer_Construction_1.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_2.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_3.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_4.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="rslides">
+                        <li><img  src="images/HF-Printer_Construction_7.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_8.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_9.jpg" alt=""></li>
+                        <li><img loading="lazy" src="images/HF-Printer_Construction_10.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="Experimente--lamps">
+        
+        <div>
+            <h3>
+                2. Nicht die Hellste Leuchte
+            </h3>
+        </div>
+        <div class="textblock">
+            In diesem Experiment untersuchen wir weiter wie wir den Design-Space explorieren können indem wir den Gestaltungsprozess persönlicher machen. Während bei den Algorithmic chairs Zufall eine große Rolle in der Auswahl der Druckobjekte spielte werden bei "Nicht die Hellste Leuchte" die zukünftigen Nutzer\*innen der Objekte selbst zum Gestaltungswerkzeug. Mit hilfe einer Kamera, welche Mimik und Gestik erfassen kann, wird jede Person dazu befähigt auf spielerische Art und Weise ein einzigartiges Objekt zu erschaffen. 
+            Kann schon so eine simple Einbeziehung der Nutzer\*innen eine Auswirkung auf die Beziehung zwischen Besitzenden und ihren Objekten bewirken ? Welche Rolle nehmen wir als Rahmen-gebende Gestalter in diesem Prozess ein? Wie viel Freiheiten können wir geben ohne die Qualität der Endprodukte zu beeinträchtigen? Wer ist letzendlich Autor bzw. Autorin der Objekte? 
+            
+        </div>
+    </section>
+</section>
 
 
-
-
-<script>
-if (document.querySelectorAll('.mermaid').length) {
-  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/mermaid@8.9.0/dist/mermaid.min.js', () => {
-    mermaid.init({
-      theme    : 'forest',
-      logLevel : 3,
-      flowchart: { curve     : 'linear' },
-      gantt    : { axisFormat: '%m/%d/%Y' },
-      sequence : { actorMargin: 50 }
-    }, '.mermaid');
-  }, window.mermaid);
-}
-</script>
-
-
-  
-
-
-
-
-  
-
-
+<section id="Ausblick">
+    
+    <div>
+        <h2>
+            Ausblick 
+        </h2>
+    </div>
+    <div class="textblock">
+        Wie können wir als Gestalter diese Möglichkeit Nutzen und Objekte schaffen, die unsere bisherige Beziehung zu alltagsobjekten neu denken oder in Frage Stellen? 
+        Diese Frage bleibt auch nach unseren ersten Experimenten bestehen. Nachdem die Technischen Aspekte und Probleme bewältigt sind richten wir unsere Aufmerksamkeit immer mehr auf diese Zentrale Fragestellung und suchen nach Wegen die Erkenntnisse die wir in den Experimenten erlangt haben weiter zu denken und auf die Probe zu stellen. 
+        
+    </div>
+</section>
+<section id="Danksagung">
+    <div height="300px">
+        <p>
+            ...
+        </p>
+    </div>
+</section>
+</main>
 </body>
 </html>

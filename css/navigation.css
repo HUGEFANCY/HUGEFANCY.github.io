@@ -1,0 +1,48 @@
+
+/* 2. Make nav sticky */
+body > nav {
+    font-family: "Ubuntu Mono", monospace;
+    position: sticky;
+    top: 2rem;
+    vertical-align: middle;
+    align-self: start;
+}
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active > a {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Sidebar Navigation */
+.section-nav {
+    padding-left: 0;
+    border-left: 1px solid #efefef;
+}
+
+.section-nav a {
+    text-decoration: none;
+    display: block;
+    padding: .125rem 0;
+    color: #ccc;
+    transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+    /* font-size: small; */
+    color: #666;
+}
+
+/** Poor man's reset **/
+* {
+    box-sizing: border-box;
+}
+
+.section-nav ul,ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.section-nav ul,ol li {
+    margin-left: 1rem;
+}
